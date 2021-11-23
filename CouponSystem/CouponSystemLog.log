@@ -1,0 +1,58 @@
+2021-04-17 21:01:59.543  INFO 23236 --- [restartedMain] c.b.C.CouponSystemApplication            : Starting CouponSystemApplication using Java 14.0.2 on BAR-PC with PID 23236 (C:\Users\BAR\IdeaProjects\CouponSystem\target\classes started by BAR in C:\Users\BAR\IdeaProjects\CouponSystem)
+2021-04-17 21:01:59.552  INFO 23236 --- [restartedMain] c.b.C.CouponSystemApplication            : No active profile set, falling back to default profiles: default
+2021-04-17 21:01:59.603  INFO 23236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-17 21:02:00.451  INFO 23236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-17 21:02:00.528  INFO 23236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
+2021-04-17 21:02:01.142  INFO 23236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-17 21:02:01.153  INFO 23236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-17 21:02:01.154  INFO 23236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-17 21:02:01.256  INFO 23236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-17 21:02:01.256  INFO 23236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1652 ms
+2021-04-17 21:02:01.270 DEBUG 23236 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2021-04-17 21:02:01.270 DEBUG 23236 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-04-17 21:02:01.414  INFO 23236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-17 21:02:01.819  INFO 23236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-17 21:02:01.869  INFO 23236 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-17 21:02:01.929  INFO 23236 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-17 21:02:02.118  INFO 23236 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-17 21:02:02.241  INFO 23236 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-17 21:02:02.805  INFO 23236 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-17 21:02:02.812  INFO 23236 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-17 21:02:03.467  WARN 23236 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-17 21:02:03.570 DEBUG 23236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2021-04-17 21:02:03.631  INFO 23236 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-17 21:02:03.719  INFO 23236 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-17 21:02:03.744  INFO 23236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-17 21:02:03.752 DEBUG 23236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-04-17 21:02:03.813 DEBUG 23236 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-04-17 21:02:03.827 DEBUG 23236 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-04-17 21:02:03.884  INFO 23236 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-04-17 21:02:03.945  INFO 23236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-17 21:02:03.946  INFO 23236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-17 21:02:03.967  INFO 23236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-17 21:02:03.997  INFO 23236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-17 21:02:04.153  INFO 23236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCouponsUsingGET_1
+2021-04-17 21:02:04.184  INFO 23236 --- [restartedMain] c.b.C.CouponSystemApplication            : Started CouponSystemApplication in 5.051 seconds (JVM running for 5.557)
+2021-04-17 21:02:12.335  INFO 23236 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-17 21:02:12.335  INFO 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-17 21:02:12.336 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-04-17 21:02:12.336 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-04-17 21:02:12.336 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-04-17 21:02:12.337 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@32c0ff52
+2021-04-17 21:02:12.337 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7b788353
+2021-04-17 21:02:12.337 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-04-17 21:02:12.337  INFO 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-17 21:02:12.346 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={masked}
+2021-04-17 21:02:12.350 DEBUG 23236 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bar.CouponSystem.rest.controller.LoginController#login(String, String)
+2021-04-17 21:02:12.403 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-04-17 21:02:12.404 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["afefdb2a60554e1"]
+2021-04-17 21:02:12.412 DEBUG 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-04-17 21:02:12.489 DEBUG 23236 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2021-04-17 21:02:12.492 DEBUG 23236 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]]
+2021-04-17 21:02:12.495 DEBUG 23236 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2021-04-17 21:02:12.495 DEBUG 23236 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-04-17 21:02:12.497 DEBUG 23236 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-04-17 21:02:12.499 DEBUG 23236 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-04-17 21:02:12.505 DEBUG 23236 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-04-17 21:02:12.506 DEBUG 23236 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Apr 17 21:02:12 IDT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+2021-04-17 21:02:12.537 DEBUG 23236 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
