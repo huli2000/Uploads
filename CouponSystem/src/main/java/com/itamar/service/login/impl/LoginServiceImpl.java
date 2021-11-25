@@ -4,8 +4,8 @@ package com.itamar.service.login.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.itamar.repo.CompanyDao;
-import com.itamar.repo.CustomerDao;
+import com.itamar.repo.CompanyRepo;
+import com.itamar.repo.CustomerRepo;
 import com.itamar.rest.common.ClientSession;
 import com.itamar.service.login.LoginService;
 import com.itamar.service.login.ex.InvalidLoginException;
@@ -16,14 +16,14 @@ import java.util.UUID;
 public class LoginServiceImpl implements LoginService {
 
     private static final int LENGTH_TOKEN = 15;
-    private final CompanyDao companyDao;
-    private final CustomerDao customerDao;
+    private final CompanyRepo companyDao;
+    private final CustomerRepo customerDao;
 
     private static final String COMPANY_ROLE = "company";
     private static final String CUSTOMER_ROLE = "customer";
 
     @Autowired
-    public LoginServiceImpl(CompanyDao companyDao, CustomerDao customerDao) {
+    public LoginServiceImpl(CompanyRepo companyDao, CustomerRepo customerDao) {
         this.companyDao = companyDao;
         this.customerDao = customerDao;
     }

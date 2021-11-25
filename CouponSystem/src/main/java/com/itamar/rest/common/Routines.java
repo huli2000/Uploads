@@ -4,7 +4,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.itamar.entities.Coupon;
-import com.itamar.repo.CouponsDao;
+import com.itamar.repo.CouponsRepo;
 import com.itamar.service.TokensManager;
 
 import java.time.LocalDate;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @Component
 public class Routines {
-    private final CouponsDao couponsDao;
+    private final CouponsRepo couponsDao;
     private final TokensManager tokensManager;
 
     private static final long CLIENT_SESSION_GRANT = 1_800_000; // 30 Minutes
@@ -22,7 +22,7 @@ public class Routines {
     private static final long CHECK_INTERVAL_COUPONS = 86_400_000; //24 Hours
 
 
-    public Routines(CouponsDao couponsDao, TokensManager tokensManager) {
+    public Routines(CouponsRepo couponsDao, TokensManager tokensManager) {
 
         this.couponsDao = couponsDao;
         this.tokensManager = tokensManager;

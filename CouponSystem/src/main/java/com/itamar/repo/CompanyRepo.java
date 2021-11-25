@@ -6,7 +6,7 @@ import com.itamar.entities.Company;
 
 import java.util.Optional;
 
-public interface CompanyDao extends JpaRepository<Company, Long>{
+public interface CompanyRepo extends JpaRepository<Company, Long>{
 
     Optional<Company> findByEmailAndPassword(String email, String password);
 }

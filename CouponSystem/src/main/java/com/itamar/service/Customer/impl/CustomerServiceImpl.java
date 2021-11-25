@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 
 import com.itamar.entities.Coupon;
 import com.itamar.entities.Customer;
-import com.itamar.repo.CouponsDao;
-import com.itamar.repo.CustomerDao;
+import com.itamar.repo.CouponsRepo;
+import com.itamar.repo.CustomerRepo;
 import com.itamar.service.Customer.CustomerService;
 
 import java.time.LocalDate;
@@ -15,12 +15,12 @@ import java.util.Optional;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
-    private final CouponsDao couponsDao;
-    private final CustomerDao customerDao;
+    private final CouponsRepo couponsDao;
+    private final CustomerRepo customerDao;
 
 
     @Autowired
-    public CustomerServiceImpl(CouponsDao couponsDao, CustomerDao customerDao) {
+    public CustomerServiceImpl(CouponsRepo couponsDao, CustomerRepo customerDao) {
         this.couponsDao = couponsDao;
         this.customerDao = customerDao;
     }

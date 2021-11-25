@@ -78,10 +78,10 @@ public class CompanyController {
         ClientSession clientSession = accessOrElseThrow(token, TokenInvalidOrExpiredException::new);
 
         if (coupon != null) {
-            Optional<Coupon> optCoupon = companyService.updateCoupon(clientSession.getId(), coupon);
+            Optional<Coupon> opt = companyService.updateCoupon(clientSession.getId(), coupon);
 
-            if (optCoupon.isPresent()) {
-                return ResponseEntity.ok(optCoupon.get());
+            if (opt.isPresent()) {
+                return ResponseEntity.ok(opt.get());
             }
         }
 

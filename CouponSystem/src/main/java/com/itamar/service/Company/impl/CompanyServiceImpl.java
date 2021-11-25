@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 
 import com.itamar.entities.Company;
 import com.itamar.entities.Coupon;
-import com.itamar.repo.CompanyDao;
-import com.itamar.repo.CouponsDao;
+import com.itamar.repo.CompanyRepo;
+import com.itamar.repo.CouponsRepo;
 import com.itamar.rest.controller.ex.CouponAccessForbiddenException;
 import com.itamar.service.Company.CompanyService;
 
@@ -18,11 +18,11 @@ import java.util.Optional;
 @Service
 public class CompanyServiceImpl implements CompanyService {
 
-    private final CouponsDao couponsDao;
-    private final CompanyDao companyDao;
+    private final CouponsRepo couponsDao;
+    private final CompanyRepo companyDao;
 
     @Autowired
-    public CompanyServiceImpl(CouponsDao couponsDao, CompanyDao companyDao) {
+    public CompanyServiceImpl(CouponsRepo couponsDao, CompanyRepo companyDao) {
         this.couponsDao = couponsDao;
         this.companyDao = companyDao;
     }

@@ -9,7 +9,7 @@ import com.itamar.entities.Coupon;
 import java.time.LocalDate;
 import java.util.List;
 
-public interface CouponsDao extends JpaRepository<Coupon, Long> {
+public interface CouponsRepo extends JpaRepository<Coupon, Long> {
 
     /**
      * find all coupons for the company in the data-source
